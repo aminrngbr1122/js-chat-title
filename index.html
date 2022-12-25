@@ -24,10 +24,12 @@
         let datas = ['سلام خوش اومدی (:', 'رفیق', 'چطوری ؟', 'خوبی', 'منم خوبم (:'];
 
         let title = document.head.querySelector("title");
+        
+        var titles = title.innerText;
 
         setInterval(() => {
             if (data['init'] == 5) {
-                // NULL
+                title.innerText = titles;
             } else {
                 title.innerText = datas[data['init']]
                 data['init']++
